@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'ArialMT';
-    src: url('fonts/arial.ttf');
+    src: url(/fonts/9041.ttf);
 }
 
 @font-face {
@@ -39,11 +39,15 @@ body {
 
 .header-product__description {
     /* margin: 0 50px; */
-    margin-left: 40px;
+    margin-left: 50px;
     font-size: 20px;
     line-height: 36px;
     font-weight: 400;
     color: #ffffff;
+}
+
+ul.header-product__description {
+    list-style-image: url(/img/check_icon_346.png);
 }
 
 .header-images {
@@ -100,3 +104,39 @@ body {
 .main-images img {
     width: 100%;
 }
+
+/* ****************** */
+
+.section-dignity {
+    margin: 0 auto;
+    max-width: 1280px;
+    background-color: #F5F5F5;
+}
+
+.section-dignity__title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #445161;
+    padding: 50px;
+    margin: 0;
+}
+
+.section-block {
+    margin: 0 auto;
+    max-width: 1280px;
+    /* height: 330px; */
+    display: flex;
+    justify-content: space-around;
+}
+
+ul.section-block__mark {
+    list-style-image: url(/img/plus.png);
+    width: 570px;
+    /* vertical-align: middle; */
+}
+
+/* ul.section-block__mark li {
+    vertical-align: top;
+} */
