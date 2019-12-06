@@ -142,13 +142,33 @@ ul.header-txt__list {
     color: #333333;
 }
 
-ul.dignity__list {
-    list-style-image: url(/img/plus.png);
+.dignity__item {
+    list-style-type: none;
+    position: relative;
+    padding-bottom: 35px;
 }
 
-ul.dignity__list li {
-    margin: 0;
+.dignity__item::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url(/img/plus.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    top: 6px;
+    left: -40px;
 }
+
+
+/* ul.dignity__list {
+    list-style-image: url(/img/plus.png);
+} */
+
+/* ul.dignity__list li {
+    margin: 0;
+} */
 
 .screenshots-wrp {
     display: flex;
