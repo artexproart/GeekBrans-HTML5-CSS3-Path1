@@ -90,9 +90,9 @@ ul.header-txt__list {
     height: 214px;
 }
 
-.header-images__img {   
+.header-images__img {
     width: 100%;
-    height: 100%; 
+    height: 100%;
 }
 
 /* .header-images__img {
@@ -147,12 +147,74 @@ ul.header-txt__list {
     display: block;
     width: 32px;
     height: 32px;
-    background-image: url(/img/plus.png);
+    background-image: url('/img/plus.png');
     -webkit-background-size: cover;
     background-size: cover;
     position: absolute;
     top: 6px;
     left: -40px;
+}
+
+.dignity-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.comment {
+    text-align: center;
+}
+
+.comment p {
+    color: rgb(172, 172, 172);
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+details {
+    width: 50%;
+    padding: 0 12px 35px 40px;
+    cursor: pointer;
+}
+
+summary {
+    display: block;
+    outline: none;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #333333;
+    position: relative;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::before {
+    content: "+";
+    display: block;
+    width: 32.4px;
+    height: 32.4px;
+    background-color: #445161;
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    top: 5px;
+    left: -44px;
+}
+
+details[open]>summary::before {
+    content: '-';
+    line-height: 33px;
+}
+
+.dignity-p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
 }
 
 .screenshots-wrp {
@@ -226,6 +288,10 @@ figcaption p {
 
     .dignity-wrp {
         flex-direction: column;
+    }
+
+    details {
+        width: 100%;
     }
 }
 
