@@ -252,6 +252,34 @@ figcaption p {
     margin: 0;
 }
 
+.prices {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    /* align-content: flex-end; */
+}
+
+.prices-title {
+    width: 100%;
+    display: block;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.prices-item {
+    width: 25%;
+    margin: 0 20px 0 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.prices-item:nth-child(4) {
+    margin: 0;
+}
+
 
 @media (max-width: 1240px) {
     .container {
@@ -268,6 +296,7 @@ figcaption p {
     p {
         width: 100%;
     }
+
     .reviews-wrp {
         margin: 0;
     }
@@ -312,12 +341,15 @@ figcaption p {
     details {
         width: 100%;
     }
+
     .reviews .reviews-wrp {
         max-width: 100%;
     }
+
     .reviews-block {
         width: 100%;
     }
+
     .reviews-comment {
         width: 100%;
     }
