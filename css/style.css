@@ -112,6 +112,8 @@ ul.header-txt__list {
 }
 
 .dignity {
+    margin: 0 auto;
+    max-width: 1280px;
     background-color: #F5F5F5;
 }
 
@@ -187,6 +189,70 @@ figcaption p {
     margin: 3px;
 }
 
+.reviews {
+    margin: 0 auto;
+    max-width: 1280px;
+    background-color: #F5F5F5;
+}
+
+.reviews-wrp {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.reviews-block {
+    display: flex;
+    width: 580px;
+    margin: 0 0 25px 0;
+}
+
+.reviews-face {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #445161;
+}
+
+.reviews-comment {
+    width: 483px;
+    min-height: 121px;
+    text-align: justify;
+    margin-left: 35px;
+    background-color: #EBEBEB;
+    border-radius: 5px;
+    position: relative;
+}
+
+.reviews-comment:before {
+    content: "";
+    border: 15px solid transparent;
+    border-right: 15px solid #EBEBEB;
+    position: absolute;
+    top: 20px;
+    left: -30px;
+}
+
+.reviews-comment__txt {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #333333;
+    padding: 15px 20px 5px 20px;
+    margin: 0;
+}
+
+.reviwes-commetn__name {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #989898;
+    padding: 0 20px 15px 20px;
+    margin: 0;
+}
+
+
 @media (max-width: 1240px) {
     .container {
         padding: 0 50px;
@@ -201,6 +267,9 @@ figcaption p {
     figcaption,
     p {
         width: 100%;
+    }
+    .reviews-wrp {
+        margin: 0;
     }
 }
 
@@ -241,6 +310,15 @@ figcaption p {
     }
 
     details {
+        width: 100%;
+    }
+    .reviews .reviews-wrp {
+        max-width: 100%;
+    }
+    .reviews-block {
+        width: 100%;
+    }
+    .reviews-comment {
         width: 100%;
     }
 }
