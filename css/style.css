@@ -253,7 +253,7 @@ figcaption p {
 }
 
 .prices {
-    padding-bottom: 50px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -291,7 +291,7 @@ figcaption p {
     color: #445162;
     background-color: #ffffff;
     border: 2px solid #445161;
-    width: 300px;
+    min-width: 300px;
     padding: 17px 0 7px 0;
     text-align: center;
 }
