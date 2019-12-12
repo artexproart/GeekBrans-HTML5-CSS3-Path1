@@ -315,6 +315,14 @@ figcaption p {
     line-height: 18px;
     font-weight: 700;
     color: #445161;
+    outline: none;
+    border: none;
+    transition: all 500ms ease; 
+    cursor: pointer;
+}
+
+.price-item__button:hover {
+    transform: scale(1.05);
 }
 
 
