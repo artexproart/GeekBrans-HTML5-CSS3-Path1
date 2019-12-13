@@ -331,8 +331,6 @@ figcaption p {
     flex-wrap: wrap;
     justify-content: center;
     width: 1280px;
-    /* height: 509px; */
-    /* padding: 50px; */
     background-color: #445161;
 }
 
@@ -366,11 +364,9 @@ figcaption p {
     box-sizing: border-box;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 5px;
-    /* border: none; */
     background-color: #ffffff;
     outline: none;
     text-transform: capitalize;
-    /* outline: none; */
 }
 
 .main-footer_form input[type="text"]:hover,
@@ -407,13 +403,6 @@ textarea[placeholder] {
     text-align: left;
 }
 
-/* ----Стилизация placeholder c префиксами---*/
-/* input::-moz-placeholder
-  input:-moz-placeholder 
-  input:-ms-input-placeholder  */
-/* ----------------------------------------- */
-
-
 .main-footer_form input[type="submit"] {
     border-radius: 5px;
     background-color: #ffffff;
@@ -434,7 +423,6 @@ textarea[placeholder] {
 
 
 .main-footer_form input[type="submit"]:hover {
-    /* background-color: gray; */
     color: #677280;
     transform: scale(1.05);
 }
@@ -447,7 +435,6 @@ textarea[placeholder] {
 .main-footer_contacts {
     width: 240px;
     height: 300px;
-    background-color: white;
 }
 
 .main-copyritght {
@@ -460,6 +447,34 @@ textarea[placeholder] {
     font-weight: 400;
     letter-spacing: 0.025em;
     color: #445162;
+}
+
+ul.icon {
+    list-style-type: none;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+ul.icon li {
+    margin: 0 0 15px 0;
+}
+
+ul.icon li.skype {
+    list-style-image: url('/img/skype_icon_319.png');
+}
+
+ul.icon li.icq {
+    list-style-image: url('/img/icq_icon_324.png');
+}
+
+ul.icon li.mail {
+    list-style-image: url('/img/email_icon_332.png');
+}
+
+ul.icon li.tel {
+    list-style-image: url('/img/phone_icon_337.png');
 }
 
 
