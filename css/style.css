@@ -330,7 +330,7 @@ figcaption p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 1280px;
+    max-width: 1280px;
     background-color: #445161;
 }
 
@@ -421,7 +421,6 @@ textarea[placeholder] {
     cursor: pointer;
 }
 
-
 .main-footer_form input[type="submit"]:hover {
     color: #677280;
     transform: scale(1.05);
@@ -437,6 +436,57 @@ textarea[placeholder] {
     height: 300px;
 }
 
+ul.icon a {
+    list-style-type: none;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+ul.icon li {
+    margin: 0 0 15px 0;
+}
+
+ul.icon li.skype,
+ul.icon li.icq,
+ul.icon li.mail,
+ul.icon li.tel {
+    position: relative;
+}
+
+ul.icon li.skype::before {
+    content: url('/img/skype_icon_319.png');
+    position: absolute;
+    top: -3px;
+    left: -33px;
+    cursor: pointer;
+}
+
+ul.icon li.icq::before {
+    content: url('/img/icq_icon_324.png');
+    position: absolute;
+    top: -3px;
+    left: -33px;
+    cursor: pointer;
+}
+
+ul.icon li.mail::before {
+    content: url('/img/email_icon_332.png');
+    position: absolute;
+    left: -33px;
+    cursor: pointer;
+}
+
+ul.icon li.tel::before {
+    content: url('/img/phone_icon_337.png');
+    position: absolute;
+    top: -3px;
+    left: -33px;
+    cursor: pointer;
+} 
+
 .main-copyritght {
     margin: 50px auto 0 auto;
     text-align: center;
@@ -447,36 +497,8 @@ textarea[placeholder] {
     font-weight: 400;
     letter-spacing: 0.025em;
     color: #445162;
+    padding: 7px 0 3px 0;
 }
-
-ul.icon {
-    list-style-type: none;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    color: #ffffff;
-}
-
-ul.icon li {
-    margin: 0 0 15px 0;
-}
-
-ul.icon li.skype {
-    list-style-image: url('/img/skype_icon_319.png');
-}
-
-ul.icon li.icq {
-    list-style-image: url('/img/icq_icon_324.png');
-}
-
-ul.icon li.mail {
-    list-style-image: url('/img/email_icon_332.png');
-}
-
-ul.icon li.tel {
-    list-style-image: url('/img/phone_icon_337.png');
-}
-
 
 @media (max-width: 1240px) {
     .container {
